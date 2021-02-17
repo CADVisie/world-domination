@@ -6,7 +6,7 @@ import TextField from '@material-ui/core/TextField';
 const useStyles = makeStyles(theme => ({
 	button: {
 		background: theme.palette.primary.main,
-		margin: theme.spacing(2)
+		margin: theme.spacing(2),
 	},
 
 	Header: {
@@ -16,13 +16,13 @@ const useStyles = makeStyles(theme => ({
 		// justifyContent: 'center',
 		alignItems: 'center',
 		fontSize: 20,
-		paddingLeft: theme.spacing(2)
+		paddingLeft: theme.spacing(2),
 		//marginLeft: 20
 	},
 
 	paper: {
-		padding: theme.spacing(2)
-	}
+		padding: theme.spacing(2),
+	},
 }));
 
 export default function Dashboard() {
