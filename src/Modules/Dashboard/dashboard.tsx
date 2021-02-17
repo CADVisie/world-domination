@@ -17,7 +17,6 @@ const useStyles = makeStyles(theme => ({
 		alignItems: 'center',
 		fontSize: 20,
 		paddingLeft: theme.spacing(2),
-		//marginLeft: 20
 	},
 
 	paper: {
