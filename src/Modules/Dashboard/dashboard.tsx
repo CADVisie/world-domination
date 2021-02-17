@@ -27,6 +27,18 @@ const useStyles = makeStyles(theme => ({
 export default function Dashboard() {
 	const classes = useStyles();
 
+	async function turnLeft() {
+		await fetch('http://192.168.68.116/left');
+	}
+
+	async function turnRight() {
+		await fetch('http://192.168.68.116/right');
+	}
+
+	async function goHome() {
+		await fetch('http://192.168.68.116/home');
+	}
+
 	return (
 		<>
 			<div className={classes.Header}>
@@ -41,7 +53,15 @@ export default function Dashboard() {
 								<Grid item xs={6}>
 									<Paper className={classes.paper}>
 										{' '}
-										<Button variant='contained'>Links</Button>
+										<Button onClick={turnLeft} variant='contained'>
+											Links
+										</Button>
+										<Button onClick={turnRight} variant='contained'>
+											Rechts
+										</Button>
+										<Button onClick={goHome} variant='contained'>
+											home
+										</Button>
 									</Paper>
 								</Grid>
 								<Grid item xs={6}>
